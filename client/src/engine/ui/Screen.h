@@ -15,13 +15,13 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Event.hpp>
 
-#include "GameWindow.hpp"
-#include "Config.hpp"
-#include "Console.hpp"
+#include "GameWindow.h"
+#include "../internal/Config.h"
+#include "../Console.h"
 
-#include "GraphicsPrimitives.hpp"
+#include "GraphicsPrimitives.h"
 
-#include "UI.hpp"
+#include "UI.h"
 
 class Screen {
 private:

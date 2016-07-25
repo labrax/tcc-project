@@ -5,7 +5,7 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "Console.hpp"
+#include "Console.h"
 
 Console::Console()
 {

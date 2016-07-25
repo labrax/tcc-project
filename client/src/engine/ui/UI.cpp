@@ -5,7 +5,7 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "UI.hpp"
+#include "UI.h"
 
 namespace UI
 {

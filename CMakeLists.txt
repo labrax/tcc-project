@@ -6,6 +6,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 file(GLOB TCC_SRC
         "client/src/*.h"
         "client/src/*.cpp"
+        "client/src/engine/*.h"
+        "client/src/engine/*.cpp"
+        "client/src/engine/ui/*.h"
+        "client/src/engine/ui/*.cpp"
+        "client/src/engine/internal/*.h"
+        "client/src/engine/internal/*.cpp"
         )
 
 #set(SOURCE_FILES

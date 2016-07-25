@@ -5,7 +5,8 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "GraphicsPrimitives.hpp"
+#include "GraphicsPrimitives.h"
+#include "../Console.h"
 
 sf::Font gamefont;
 

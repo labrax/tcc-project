@@ -5,7 +5,7 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "GameUI.hpp"
+#include "GameUI.h"
 
 PlayerConsoleInput::PlayerConsoleInput(sf::Vector2f pos, sf::Vector2f size, std::string txt) : 
 	EditBox(pos, size, txt, config::color_border, config::color_inside, sf::Color::White)

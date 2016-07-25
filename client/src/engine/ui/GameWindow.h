@@ -14,35 +14,21 @@
 #include <cmath>
 #include <cstring>
 
-#include "Config.hpp"
+#include "../internal/Config.h"
 
-#include "UI.hpp"
-#include "GameUI.hpp"
+#include "UI.h"
+#include "GameUI.h"
+
+#include "../internal/DataLoader.h"
 
 class GameWindow : public UI::Window
 {
 private:
-	MatrixPainter matrix;
-	unsigned char * next_matrix;
-
-	unsigned int iteration; //these two will be used to keep in sync with the server
-	time_t refTime;
-	
-	inline void runIteration();
-	
-	bool next_matrix_valid;
-	//exit popup
-	UI::PopUp * popup;
+    sf::RenderTexture renderTexture;
+    bool may_exit = false;
 public:
 	GameWindow(sf::Vector2f pos, sf::Vector2f size, unsigned int width, unsigned int height);
 	virtual ~GameWindow();
-	
-	unsigned int getIteration();
-	
-	void randomFill();
-	
-	void setMatrix(unsigned char * other, unsigned int width, unsigned int height, unsigned int iteration, time_t ref_iteration);
-	void compute();
 	
 	void draw(sf::RenderWindow * window);
 	bool onEvent(sf::Event & event);

@@ -5,7 +5,7 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "InputHandler.hpp"
+#include "InputHandler.h"
 
 InputHandler::InputHandler()
 {

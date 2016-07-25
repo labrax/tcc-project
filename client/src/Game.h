@@ -8,12 +8,12 @@
 #ifndef SRC_CLIENT_GAME_H_
 #define SRC_CLIENT_GAME_H_
 
-#include "Console.hpp"
-#include "Config.hpp"
+#include "engine/Console.h"
+#include "engine/internal/Config.h"
 
-#include "InputHandler.hpp"
-#include "GameWindow.hpp"
-#include "Screen.hpp"
+#include "engine/InputHandler.h"
+#include "engine/ui/GameWindow.h"
+#include "engine/ui/Screen.h"
 
 class Game
 {

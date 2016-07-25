@@ -8,11 +8,11 @@
 #ifndef GAMEUI_CONFIG_H_
 #define GAMEUI_CONFIG_H_
 
-#include "UI.hpp"
-#include "Config.hpp"
-#include "GraphicsPrimitives.hpp"
+#include "UI.h"
+#include "../internal/Config.h"
+#include "GraphicsPrimitives.h"
 
-#include "Console.hpp"
+#include "../Console.h"
 
 #include <cstring>
 

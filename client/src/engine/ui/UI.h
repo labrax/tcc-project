@@ -15,8 +15,8 @@
 #include <string>
 #include <vector>
 
-#include "GraphicsPrimitives.hpp"
-#include "Console.hpp"
+#include "GraphicsPrimitives.h"
+#include "../Console.h"
 
 #define DEFAULT_MIN_DISTANCE 30
 #define DEFAULT_CHECKBOX_SIZE 20

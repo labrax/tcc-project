@@ -5,11 +5,10 @@
  *      Author: Victor R. Cardoso
  */
 
-#include "Game.hpp"
+#include "Game.h"
 
 Game::Game() {
 	gm = new GameWindow(sf::Vector2f(0, 0), sf::Vector2f(0, 0), config::width, config::height);
-	gm->randomFill();
 	
 	PlayerConsole * pc = new PlayerConsole();
 	gm->addElement(pc, false, false);
@@ -34,8 +33,9 @@ int Game::run() {
 	sf::Clock clock;
 	while(isRunning) {
 		//network
+
 		//GameWindow
-		gm->compute();
+
 		//input
 		ih->poolEvents(screen);
 		

@@ -10,8 +10,8 @@
 
 #include <SFML/Window/Event.hpp>
 
-#include "Screen.hpp"
-#include "Console.hpp"
+#include "ui/Screen.h"
+#include "Console.h"
 
 #define MIN_SIZE 5
 #define MAX_SIZE 50
