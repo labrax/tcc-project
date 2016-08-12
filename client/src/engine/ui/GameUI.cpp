@@ -66,7 +66,7 @@ bool PlayerConsole::onEvent(sf::Event & event)
 			if(event.key.code == sf::Keyboard::Return && eb.txt.size() > 0)
 			{
 				//TODO: get and run commands!
-				Console::getConsole().log("Command is \"%s\"\n", eb.txt.c_str());
+				((Console &) Console::getInstance()).log("Command is \"%s\"\n", eb.txt.c_str());
 				if(eb.txt == "EXIT")
 					exit(2);
 				str.insert(str.begin(), eb.txt);

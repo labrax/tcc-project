@@ -12,11 +12,12 @@
 
 #include "ui/Screen.h"
 #include "Console.h"
+#include "patterns/Observer.h"
 
 #define MIN_SIZE 5
 #define MAX_SIZE 50
 
-class InputHandler {
+class InputHandler : public Observer{
 private:
 	
 public:

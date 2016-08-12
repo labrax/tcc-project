@@ -17,6 +17,7 @@
 
 #include "GraphicsPrimitives.h"
 #include "../Console.h"
+#include "../GElement.h"
 
 #define DEFAULT_MIN_DISTANCE 30
 #define DEFAULT_CHECKBOX_SIZE 20
@@ -62,6 +63,7 @@ namespace UI
 	class Element : public Drawable
 	{
 		public:
+			uint32_t id;
 			sf::Vector2f pos, size;
 			Element * parent;
 			bool isVisible;

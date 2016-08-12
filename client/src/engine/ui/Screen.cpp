@@ -25,7 +25,7 @@ Screen::Screen(UI::Element * drawable) : drawable(drawable)
 	
 	if(!gamefont.loadFromFile("04B_03__.TTF"))
 	{
-		Console::getConsole().log("Erro carregando fonte! Arquivo: \"%s\"\n", "04B_03__.TTF");
+		((Console &) Console::getInstance()).log("Erro carregando fonte! Arquivo: \"%s\"\n", "04B_03__.TTF");
 		assert(false);
 	}
 	

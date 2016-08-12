@@ -13,6 +13,15 @@ namespace config
 	sf::Time time_per_frame = sf::seconds(1.0f/frameratelimit);
 	char game_title[32] = "alpha";
 
+	uint32_t amount_assets = 5;
+	const char assets_file[][5] = {
+            "roguelikeChar_transparent.png",
+            "roguelikeIndoor_transparent.png",
+            "roguelikeCity_transparent.png",
+            "roguelikeSheet_transparent.png",
+            "roguelikeDungeon_transparent.png"
+    };
+
 	//gamestate
 	unsigned int height = 30, width = 40, iterations_per_sec = 1;
 	unsigned char uchar_nil = 0;

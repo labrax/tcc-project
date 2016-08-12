@@ -1,13 +1,10 @@
-/*
- * GameWindow.cpp
- *
- *  Created on: 14 de set de 2015
- *      Author: Victor R. Cardoso
- */
+//
+// Created by vroth on 10/08/16.
+//
 
-#include "GameWindow.h"
+#include "GSpriteViewer.h"
 
-GameWindow::GameWindow(sf::Vector2f pos, sf::Vector2f size, unsigned int width, unsigned int height) : Window(pos, size, "")
+GSpriteViewer::GSpriteViewer(sf::Vector2f pos, sf::Vector2f size, unsigned int width, unsigned int height) : Window(pos, size, ""), x(0), y(0), curr_file(0)
 {
     if (!renderTexture.create((config::grid_distance + 2) * config::sprite_size, (config::grid_distance + 2) * config::sprite_size))
     {
@@ -16,12 +13,12 @@ GameWindow::GameWindow(sf::Vector2f pos, sf::Vector2f size, unsigned int width, 
     renderTexture.setSmooth(true);
 }
 
-GameWindow::~GameWindow()
+GSpriteViewer::~GSpriteViewer()
 {
 
 }
 
-void GameWindow::draw(sf::RenderWindow * window)
+void GSpriteViewer::draw(sf::RenderWindow * window)
 {
     renderTexture.clear();
 
@@ -52,7 +49,7 @@ void GameWindow::draw(sf::RenderWindow * window)
 
     window->draw(sprite);
     //UI::Window::draw(window);
-	//TODO: check drawing order
+    //TODO: check drawing order
 
 
     char iteration[64];
@@ -62,26 +59,26 @@ void GameWindow::draw(sf::RenderWindow * window)
     drawElements(window);
 }
 
-bool GameWindow::onEvent(sf::Event & event)
+bool GSpriteViewer::onEvent(sf::Event & event)
 {
-	//Console::getConsole().log("player_: %f %f\n", player_x, player_y);
-	//Console::getConsole().log("mouse_: %u %u\n", mouse_x, mouse_y);
+    //Console::getConsole().log("player_: %f %f\n", player_x, player_y);
+    //Console::getConsole().log("mouse_: %u %u\n", mouse_x, mouse_y);
 
-	if(event.type == sf::Event::Closed)
-	{
+    if(event.type == sf::Event::Closed)
+    {
         may_exit = true;
-		return true;
-	}
-	return false;
-	//return false;
+        return true;
+    }
+    return false;
+    //return false;
 }
 
-void GameWindow::onResize(sf::Vector2f & new_size)
+void GSpriteViewer::onResize(sf::Vector2f & new_size)
 {
     size = new_size;
 }
 
-bool GameWindow::exit()
+bool GSpriteViewer::exit()
 {
-	return may_exit;
+    return may_exit;
 }

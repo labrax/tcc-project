@@ -10,12 +10,12 @@
 
 #include <cstdio>
 #include <cstdarg>
+#include "patterns/Singleton.h"
 
-class Console {
+class Console : public Singleton {
 private:
 	Console();
 public:
-	static Console & getConsole();
 	void log(const char* format, ...);
 	~Console();
 };

@@ -17,12 +17,6 @@ Console::~Console()
 	
 }
 
-Console & Console::getConsole()
-{
-	static Console * instance = new Console();
-	return *instance;
-}
-
 void Console::log(const char* format, ...)
 {
     va_list argptr;

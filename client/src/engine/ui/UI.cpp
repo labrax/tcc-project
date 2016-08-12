@@ -367,12 +367,12 @@ namespace UI
 	
 	void PopUp::draw(sf::RenderWindow * window)
 	{
-		Console::getConsole().log("dummy draw?\n");
+		((Console &) Console::getInstance()).log("dummy draw?\n");
 	}
 	
 	bool PopUp::onEvent(sf::Event & event)
 	{
-		Console::getConsole().log("dummy event?\n");
+		((Console &) Console::getInstance()).log("dummy event?\n");
 		return false;
 	}
 	

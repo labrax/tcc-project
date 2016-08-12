@@ -28,7 +28,7 @@ void DataLoader::loadFile(std::string file_name) {
         texture_file.seekg(0, texture_file.end);
         const auto length = texture_file.tellg();
         if (!length) {
-            Console::getConsole().log("Cannot load zero byte texture file %s\n", file_name.c_str());
+            ((Console &) Console::getInstance()).log("Cannot load zero byte texture file %s\n", file_name.c_str());
             throw new DataLoaderError(__FILE__, __LINE__);
         }
         buffer.resize(length); // reserve space
@@ -39,7 +39,7 @@ void DataLoader::loadFile(std::string file_name) {
         texture_file.read(start, length);
         texture_file.close();
     } else {
-        Console::getConsole().log("Could not open texture file %s\n", file_name.c_str());
+        ((Console &) Console::getInstance()).log("Could not open texture file %s\n", file_name.c_str());
         throw new DataLoaderError(__FILE__, __LINE__);
     }
 
@@ -57,7 +57,7 @@ sf::Sprite *DataLoader::getSprite(std::string file_name, sf::IntRect &rect) {
     it = this->dataStore.find(file_name);
 
     if (!texture->loadFromMemory(&it->second[0], it->second.size(), rect)) {
-        Console::getConsole().log("Texture load failed.\n");
+        ((Console &) Console::getInstance()).log("Texture load failed.\n");
         throw new DataLoaderError(__FILE__, __LINE__);
     }
 
@@ -73,7 +73,7 @@ sf::Sprite * DataLoader::getSprite(std::string file_name, int idx, int idy) {
             std::tuple<std::string, unsigned int, unsigned int>(file_name, idx, idy));
 
     if ( it == spriteStore.end() ) {
-        Console::getConsole().log("Loading sprite %s (%d,%d)\n", file_name.c_str(), idx, idy);
+        ((Console &) Console::getInstance()).log("Loading sprite %s (%d,%d)\n", file_name.c_str(), idx, idy);
         sf::IntRect ir = sf::IntRect(17 * idx, 17 * idy, 16, 16);
         sf::Sprite * sprite = getSprite(file_name, ir);
         std::tuple<std::string, unsigned int, unsigned int> tp = std::tuple<std::string, unsigned int, unsigned int>(file_name, idx, idy);

@@ -17,6 +17,9 @@ namespace config {
 	//game
 	extern sf::Time time_per_frame;
 	extern char game_title[];
+
+	extern uint32_t amount_assets;
+	extern const char assets_file[][5];
 	//gamestate
 	extern unsigned int height, width, iterations_per_sec;
 	extern unsigned char uchar_nil;

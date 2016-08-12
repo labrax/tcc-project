@@ -12,6 +12,8 @@ file(GLOB TCC_SRC
         "client/src/engine/ui/*.cpp"
         "client/src/engine/internal/*.h"
         "client/src/engine/internal/*.cpp"
+        "client/src/engine/patterns/*.h"
+        "client/src/engine/patterns/*.cpp"
         )
 
 #set(SOURCE_FILES

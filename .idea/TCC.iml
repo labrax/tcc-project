@@ -4,26 +4,36 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/client/src/Game.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/Main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/InputHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/GEvent.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/DataLoader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/Config.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/Error.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/Config.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/Error.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/internal/DataLoader.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/patterns/Observer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/patterns/Singleton.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/patterns/Observer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/patterns/Singleton.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GraphicsPrimitives.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GameWindow.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/UI.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/Screen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GSpriteViewer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/Screen.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/UI.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GameUI.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GameWindow.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GraphicsPrimitives.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/Screen.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GSpriteViewer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/UI.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/ui/GameUI.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/Console.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/GElement.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/InputHandler.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/Console.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/engine/Console.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/InputHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/GEvent.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/client/src/engine/GElement.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/client/src/Game.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/FindSFML.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />

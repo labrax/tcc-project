@@ -22,8 +22,9 @@
 #include "GraphicsPrimitives.h"
 
 #include "UI.h"
+#include "../patterns/Observer.h"
 
-class Screen {
+class Screen : public Observer{
 private:
 	//window variables
 	sf::RenderWindow * window;
